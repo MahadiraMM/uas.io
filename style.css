@@ -1,0 +1,64 @@
+/* style.css - Kustomisasi Tambahan untuk Bootstrap */
+
+/* Background Gradient Keren */
+.bg-gradient-poke {
+    background: linear-gradient(135deg, #ffcb05 50%, #3b4cca 50%);
+    min-height: 100vh;
+}
+
+/* Header Kartu Detail */
+.header-bg {
+    background: linear-gradient(135deg, #ffcb05, #3b4cca);
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Animasi Kartu */
+.card-pokemon {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border: none !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-pokemon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border: 1px solid #3b4cca !important;
+}
+
+.poke-img-list {
+    width: 100px; height: 100px; object-fit: contain; margin-bottom: 10px;
+}
+
+/* Gambar Detail Mengambang */
+.pokemon-img-detail {
+    width: 180px; height: 180px;
+    background: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-top: -90px;
+    position: relative;
+    z-index: 10;
+    object-fit: contain;
+}
+
+/* Warna Tombol Tipe */
+.btn-type { color: white !important; font-size: 0.85rem; border: none; margin: 3px; }
+.btn-type:hover { opacity: 0.9; color: white; }
+.type-fire { background-color: #EE8130; }
+.type-water { background-color: #6390F0; }
+.type-grass { background-color: #7AC74C; }
+.type-electric { background-color: #F7D02C; color: #333 !important; }
+.type-psychic { background-color: #F95587; }
+.type-ice { background-color: #96D9D6; color: #333 !important; }
+.type-dragon { background-color: #6F35FC; }
+.type-fairy { background-color: #D685AD; }
+.type-normal { background-color: #A8A77A; }
+.type-bug { background-color: #A6B91A; }
+.type-fighting { background-color: #C22E28; }
+.type-ground { background-color: #E2BF65; }
+.type-rock { background-color: #B6A136; }
+.type-ghost { background-color: #735797; }
+.type-poison { background-color: #A33EA1; }

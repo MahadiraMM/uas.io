@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <div id="page-category" class="container py-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bold text-primary">Filter Tipe</h2>
+            <a href="list.html" class="btn btn-outline-secondary">&larr; Kembali</a>
+        </div>
+
+        <div class="card shadow-sm mb-4 border-0 rounded-4">
+            <div class="card-body text-center">
+                <p class="text-muted small mb-2">Pilih elemen:</p>
+                <button onclick="getByType('fire')" class="btn btn-type type-fire rounded-pill px-3">Fire</button>
+                <button onclick="getByType('water')" class="btn btn-type type-water rounded-pill px-3">Water</button>
+                <button onclick="getByType('grass')" class="btn btn-type type-grass rounded-pill px-3">Grass</button>
+                <button onclick="getByType('electric')" class="btn btn-type type-electric rounded-pill px-3">Electric</button>
+                <button onclick="getByType('psychic')" class="btn btn-type type-psychic rounded-pill px-3">Psychic</button>
+                <button onclick="getByType('ice')" class="btn btn-type type-ice rounded-pill px-3">Ice</button>
+                <button onclick="getByType('dragon')" class="btn btn-type type-dragon rounded-pill px-3">Dragon</button>
+                <button onclick="getByType('fairy')" class="btn btn-type type-fairy rounded-pill px-3">Fairy</button>
+                <button onclick="getByType('normal')" class="btn btn-type type-normal rounded-pill px-3">Normal</button>
+                <button onclick="getByType('poison')" class="btn btn-type type-poison rounded-pill px-3">Poison</button>
+            </div>
+        </div>
+
+        <h4 id="category-title" class="mb-3 border-bottom pb-2">Silakan pilih tipe diatas</h4>
+        <div id="pokemon-container" class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
